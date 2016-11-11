@@ -27,8 +27,7 @@
       "path" : "/opt/deploy",
       "post-deploy" : "npm install && pm2 startOrGracefulReload ecosystem.json --env production",
         "env" : {
-            "NODE_ENV": "production",
-            "BASE_URL": "admin.tellform.com"
+            "NODE_ENV": "production"
         }
     },
     "kmc" : {
