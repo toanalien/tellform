@@ -5,7 +5,7 @@ module.exports = {
 		google_analytics_id: process.env.GOOGLE_ANALYTICS_ID || '',
 		title: process.env.APP_NAME || 'TellForm',
 		description: process.env.APP_DESC || 'Opensource form builder alternative to TypeForm',
-		keywords:  process.env.APP_KEYWORDS || 'typeform, pdfs, forms, opensource, formbuilder, google forms, nodejs'
+		keywords: process.env.APP_KEYWORDS || 'typeform, pdfs, forms, opensource, formbuilder, google forms, nodejs'
 	},
 	port: process.env.PORT || 3000,
 	socketPort: process.env.SOCKET_PORT || 20523,
@@ -14,7 +14,7 @@ module.exports = {
 
 	reCAPTCHA_Key: process.env.reCAPTCHA_KEY || '',
 
-    signupDisabled: !!process.env.SIGNUP_DISABLED,
+	signupDisabled: !!process.env.SIGNUP_DISABLED,
 	baseUrl: '',
 	tempUserCollection: 'temporary_users',
 
@@ -45,14 +45,14 @@ module.exports = {
 		maxAge: null,
 		// To set the cookie in a specific domain uncomment the following
 		// setting:
-		 domain: 'cjs-tellform.herokuapp.com'
+		domain: ''
 	},
 
 	/*
 	 * Upload Configuration
 	 */
 	//Global upload path
-	uploadPath : 'uploads/',
+	uploadPath: 'uploads/',
 	//PDF storage path
 	pdfUploadPath: 'uploads/pdfs/',
 	//Temp files storage path
@@ -78,7 +78,7 @@ module.exports = {
 		],
 		js: [
 			'public/config.js',
-            'public/application.js',
+			'public/application.js',
 			'public/dist/populate_template_cache.js',
 			'public/modules/*/*.js',
 			'public/modules/*/*/*/*/*.js',

@@ -3,11 +3,8 @@
 module.exports = {
 	baseUrl: process.env.BASE_URL || 'http://localhost:5000',
 	db: {
-		uri: 'mongodb://'+(process.env.DB_HOST || 'localhost')+'/mean',
-		options: {
-			user: '',
-			pass: ''
-		}
+		uri: process.env.MONGODB_URI || 'localhost:27017',
+		options: {}
 	},
 	log: {
 		// Can specify one of 'combined', 'common', 'dev', 'short', 'tiny'
